@@ -4,7 +4,6 @@
     <div class="links">
       <router-link to="/about-me" class="link-item"> About Me</router-link>
       <router-link to="/projects" class="link-item"> Projects </router-link>
-      <router-link to="/test" class="link-item"> test</router-link>
     </div>
     <router-view></router-view>
   </div>
@@ -50,6 +49,6 @@ export default {
 .link-item {
   text-decoration: inherit;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 </style>

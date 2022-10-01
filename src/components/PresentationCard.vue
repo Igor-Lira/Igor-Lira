@@ -14,6 +14,9 @@
         <button> LinkedIn </button>
       </div>
     </div>
+    <div class="profile-img">
+      <img src="../../public/me.jpg" alt="">
+    </div>
   </div>
 </template>
 
@@ -21,7 +24,7 @@
 .presentation-card {
   position: relative;
   left: 10%;
-  height: 426px;
+  height: 300px;
   width: 85%;
   background: red;
   background: #FDFDFD;
@@ -66,5 +69,22 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media only screen and (max-width: 720px) {
+  .profile-img {
+    visibility: hidden;
+  }
+}
+
+.profile-img {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+}
+
+.profile-img>img {
+  width: 200px;
+  border-radius: 50%;
 }
 </style>

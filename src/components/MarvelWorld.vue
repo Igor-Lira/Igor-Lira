@@ -25,6 +25,11 @@
       concerns was to create a minimum responsive layout, so I developed using a mobile device layout to check if the
       accessibility was good enough.
     </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Qua8Ec9aSlE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen />
+    </div>
   </div>
 </template>
 
@@ -49,6 +54,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 40px;
-  color: #C4C4C4;
+  color: #b3b3b3;
+}
+
+.video {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>
