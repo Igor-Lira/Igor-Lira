@@ -8,14 +8,14 @@ import FindYourDuo from "./components/FindYourDuo.vue";
 const routes = [
   { path: "/about-me", component: AboutMe },
   { path: "/projects", component: ProjectList },
-  { path: "/marvel-world", component: MarvelWorld, name: "marvel" },
+  { path: "/projects/marvel-world", component: MarvelWorld, name: "marvel" },
   {
-    path: "/post-your-ideas",
+    path: "/projects/post-your-ideas",
     component: PostYourIdeas,
     name: "post-your-ideas",
   },
   {
-    path: "/find-your-duo",
+    path: "/projects/find-your-duo",
     component: FindYourDuo,
     name: "find-your-duo",
   },

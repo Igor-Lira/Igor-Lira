@@ -1,9 +1,19 @@
+<script setup>
+import { watch, ref } from 'vue';
+import { useRouter } from 'vue-router'
+const router = useRouter();
+const isProjectActive = ref(false);
+watch(() => router, () => isProjectActive.value = router.currentRoute.value.path.includes('projects'), { deep: true })
+
+</script>
 <template>
   <div class="page-content">
+    {{ currentPath }}
     <PresentationCard class="page-item" />
     <div class="links">
       <router-link to="/about-me" class="link-item"> About Me</router-link>
-      <router-link to="/projects" class="link-item"> Projects </router-link>
+      <router-link to="/projects" class="link-item" :class="[isProjectActive ? 'router-link-active': '']"> Projects
+      </router-link>
     </div>
     <router-view></router-view>
   </div>
