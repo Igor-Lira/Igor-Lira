@@ -1,18 +1,25 @@
 <script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter();
+function navigate(name) {
+  router.push({
+    name,
+  });
+}
 </script>
 <template>
   <div class="project-list-container">
-    <div class="project-card">
+    <div class="project-card" @click="navigate('marvel')">
       <img src="../../public/marvel.jpg" />
       <div class="project-category"> FRONT-END WEB </div>
       <div class="project-title"> MARVEL WORLD </div>
     </div>
     <div class="project-card">
-      <img src="../../public/marvel.jpg" />
-      <div class="project-category"> FRONT-END WEB </div>
-      <div class="project-title"> MARVEL WORLD </div>
+      <img src="../../public/marvel.jpg" @click="navigate('post-your-ideas')" />
+      <div class="project-category"> FULL-STACK WEB </div>
+      <div class="project-title"> POST YOUR IDEAS </div>
     </div>
-    <div class="project-card">
+    <div class="project-card" @click="navigate('post-your-ideas')">
       <img src="../../public/marvel.jpg" />
       <div class="project-category"> FRONT-END WEB </div>
       <div class="project-title"> MARVEL WORLD </div>
