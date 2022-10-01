@@ -1,5 +1,5 @@
 <script setup>
-
+import download_file from '../utils';
 </script>
   
 <template>
@@ -9,7 +9,7 @@
       <div class="presentation-content-2">Igor</div>
       <div class="presentation-content-1">Web Developer</div>
       <div class="buttons-container">
-        <button> Resume </button>
+        <button @click="download_file('./CV_EN.pdf')"> Resume </button>
         <button> Github</button>
         <button> LinkedIn </button>
       </div>
@@ -58,6 +58,10 @@
   color: #000000;
 }
 
+.buttons-container {
+  margin-top: 20px;
+}
+
 .buttons-container>button {
   width: 80px;
   margin-left: 10px;
@@ -69,6 +73,11 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+}
+
+.buttons-container>button:hover {
+  background: #767575;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 720px) {
