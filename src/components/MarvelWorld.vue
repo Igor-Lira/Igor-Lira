@@ -40,11 +40,11 @@
 }
 
 .title-1 {
-  font-family: 'Roboto';
+  font-family: 'Itim';
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
   color: #000000;
 }
 

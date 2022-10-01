@@ -23,9 +23,9 @@ import download_file from '../utils';
 <style scoped>
 .presentation-card {
   position: relative;
-  left: 10%;
-  height: 300px;
-  width: 85%;
+  left: 5%;
+  height: 320px;
+  width: 90%;
   background: red;
   background: #FDFDFD;
   box-shadow: 3px 4px 4px rgba(163, 159, 159, 0.25)
@@ -33,14 +33,14 @@ import download_file from '../utils';
 
 .presentation-content {
   position: absolute;
-  left: 10%;
   top: 30%;
   text-align: left;
-  width: 355px;
+  /* width: 355px; */
   height: 130px;
 }
 
 .presentation-content-1 {
+  margin-left: 10%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
@@ -50,6 +50,7 @@ import download_file from '../utils';
 }
 
 .presentation-content-2 {
+  margin-left: 10%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -59,12 +60,13 @@ import download_file from '../utils';
 }
 
 .buttons-container {
-  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .buttons-container>button {
-  width: 80px;
-  margin-left: 10px;
+  width: 70px;
+  margin-left: 5px;
   background: #3A3737;
   border-radius: 10px;
   color: #FFFFFF;

@@ -13,8 +13,11 @@
 
 <style scoped>
 .content-container {
+  text-align: center;
   margin-top: 40px;
   margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }
 
 .content-1 {
@@ -36,7 +39,6 @@
 }
 
 .content-3 {
-  width: 80%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;

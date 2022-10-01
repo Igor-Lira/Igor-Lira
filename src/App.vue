@@ -43,12 +43,32 @@ export default {
   font-weight: 400;
   font-size: 24px;
   line-height: 40px;
-  color: #C4C4C4;
+  color: #958d8d;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .link-item {
-  text-decoration: inherit;
+  position: relative;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+.router-link-active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  width: 80px;
+  height: 3px;
+  transform: skew(-12deg) translateX(-50%);
+  background: #958d8d;
+  z-index: -1;
 }
 </style>

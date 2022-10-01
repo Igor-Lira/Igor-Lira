@@ -29,16 +29,16 @@ function navigate(name) {
 
 <style>
 .project-list-container {
-  margin-top: 20px;
   margin-left: 10%;
-  width: 100%;
-  /* height: 350px; */
+  margin-top: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .project-card {
-  min-width: 300px;
+  max-width: 300px;
   margin-right: 30px;
   margin-top: 30px;
   background: #FFFFFF;
@@ -48,7 +48,6 @@ function navigate(name) {
 }
 
 .project-card>img {
-  height: 270px;
   width: 100%;
   border-radius: 31px 31px 0px 0px;
 }
