@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="page-content">
+    <PresentationCard class="page-item" />
+    <ProjectList class="page-item" />
+    <AboutMe class="page-item" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PresentationCard from './components/PresentationCard.vue'
+import ProjectList from './components/ProjectList.vue'
+import AboutMe from './components/AboutMe.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PresentationCard,
+    ProjectList,
+    AboutMe,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.page-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page-item {
+  width: 100%;
+  height: auto;
 }
 </style>
