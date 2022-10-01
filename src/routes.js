@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe.vue";
 import MarvelWorld from "./components/MarvelWorld.vue";
 import ProjectList from "./components/ProjectList.vue";
 import PostYourIdeas from "./components/PostYourIdeas.vue";
+import FindYourDuo from "./components/FindYourDuo.vue";
 
 const routes = [
   { path: "/about-me", component: AboutMe },
@@ -12,6 +13,11 @@ const routes = [
     path: "/post-your-ideas",
     component: PostYourIdeas,
     name: "post-your-ideas",
+  },
+  {
+    path: "/find-your-duo",
+    component: FindYourDuo,
+    name: "find-your-duo",
   },
 ];
 
