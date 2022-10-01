@@ -1,5 +1,12 @@
 <script setup>
 import download_file from '../utils';
+
+function openLinkedIn() {
+  window.open('https://www.linkedin.com/in/igor-lira-passos-5b4aa5192/')
+}
+function openGithub() {
+  window.open('https://github.com/Igor-Lira')
+}
 </script>
   
 <template>
@@ -10,8 +17,8 @@ import download_file from '../utils';
       <div class="presentation-content-1">Web Developer</div>
       <div class="buttons-container">
         <button @click="download_file('./CV_EN.pdf')"> Resume </button>
-        <button> <img src="../../public/icon-github.svg" alt=""></button>
-        <button> <img src="../../public/icon-linkedin.svg" alt=""> </button>
+        <button @click="openGithub"> <img src="../../public/icon-github.svg" alt=""></button>
+        <button @click="openLinkedIn"> <img src="../../public/icon-linkedin.svg" alt=""> </button>
       </div>
     </div>
     <div class="profile-img">
@@ -59,7 +66,8 @@ import download_file from '../utils';
 }
 
 .buttons-container {
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  display: flex;
 }
 
 .buttons-container>button {
@@ -68,7 +76,8 @@ import download_file from '../utils';
   font-family: 'Itim';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 24px;
+  height: 30px;
   line-height: 14px;
 }
 
@@ -95,8 +104,8 @@ import download_file from '../utils';
 }
 
 button>img {
-  padding-top: 2px;
-  width: 10px;
+  /* padding-top: 2px; */
+  width: 20px;
   background-size: cover;
 }
 </style>
