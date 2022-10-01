@@ -10,8 +10,8 @@ import download_file from '../utils';
       <div class="presentation-content-1">Web Developer</div>
       <div class="buttons-container">
         <button @click="download_file('./CV_EN.pdf')"> Resume </button>
-        <button> Github</button>
-        <button> LinkedIn </button>
+        <button> <img src="../../public/icon-github.svg" alt=""></button>
+        <button> <img src="../../public/icon-linkedin.svg" alt=""> </button>
       </div>
     </div>
     <div class="profile-img">
@@ -32,6 +32,7 @@ import download_file from '../utils';
 }
 
 .presentation-content {
+  margin-left: 10%;
   position: absolute;
   top: 30%;
   text-align: left;
@@ -40,7 +41,6 @@ import download_file from '../utils';
 }
 
 .presentation-content-1 {
-  margin-left: 10%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
@@ -50,7 +50,6 @@ import download_file from '../utils';
 }
 
 .presentation-content-2 {
-  margin-left: 10%;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -61,15 +60,11 @@ import download_file from '../utils';
 
 .buttons-container {
   padding-top: 10px;
-  padding-left: 10px;
 }
 
 .buttons-container>button {
-  width: 70px;
-  margin-left: 5px;
-  background: #3A3737;
-  border-radius: 10px;
-  color: #FFFFFF;
+  margin-right: 10px;
+  width: fit-content;
   font-family: 'Itim';
   font-style: normal;
   font-weight: 400;
@@ -97,5 +92,11 @@ import download_file from '../utils';
 .profile-img>img {
   width: 200px;
   border-radius: 50%;
+}
+
+button>img {
+  padding-top: 2px;
+  width: 10px;
+  background-size: cover;
 }
 </style>
