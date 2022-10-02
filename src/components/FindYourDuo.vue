@@ -4,12 +4,38 @@ import ProjectPage from './ProjectPage.vue'
     
 <template>
     <ProjectPage>
-        <template #title>Post Your Ideas</template>
+        <template #title>Find Your Duo</template>
         <template #description>
+            <p>
+                Find your duo is a full-stack application that assists gamers in finding other people to play together
+                based
+                on their preferences, such as which game they play, when they usually are online, and if they use voice
+                chat.
+                The
+                user can also create an announcement and wait for others to connect. There is a mobile and a web
+                version.
+            </p>
 
         </template>
         <template #about>
+            <p>
+                This project was developed in the NLW course by Rockseat, which consists of creating a React/React
+                Native
+                client with NodeJs in backend.
+            </p>
 
+            <p>
+                On the server side, express is used to create a server and retrieve GET and POST requests for
+                <b> users </b> and <b> announcements</b> models. Prisma TypeScript ORM facilitates data
+                modelling, migrations,
+                type-safety and auto-completion.
+            </p>
+
+            <p>
+                On the client side, react uses components such as the Game Card that repeats in a list. React
+                Native
+                with expo is used to create the mobile version. Tailwindcss is used to add styling to the website.
+            </p>
         </template>
         <template #video>
             <div class="video-item">
