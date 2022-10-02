@@ -6,6 +6,7 @@ import PostYourIdeas from "./components/PostYourIdeas.vue";
 import FindYourDuo from "./components/FindYourDuo.vue";
 
 const routes = [
+  { path: "/", component: AboutMe },
   { path: "/about-me", component: AboutMe },
   { path: "/projects", component: ProjectList },
   { path: "/projects/marvel-world", component: MarvelWorld, name: "marvel" },

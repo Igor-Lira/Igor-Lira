@@ -1,8 +1,6 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true,
-//  publicPath: '/Igor-Lira/',
-//  devServer: {
-//    disableHostCheck: true,
-//  }
-})
+module.exports = {
+  publicPath: process.env.PRODUCTION ? "/Igor-Lira/" : "/",
+  devServer: {
+    allowedHosts: "all",
+  },
+};
