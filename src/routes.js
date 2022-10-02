@@ -4,6 +4,7 @@ import MarvelWorld from "./components/MarvelWorld.vue";
 import ProjectList from "./components/ProjectList.vue";
 import PostYourIdeas from "./components/PostYourIdeas.vue";
 import FindYourDuo from "./components/FindYourDuo.vue";
+import { publicPath } from "../vue.config";
 
 const routes = [
   { path: "/", component: AboutMe },
@@ -23,7 +24,7 @@ const routes = [
 ];
 
 const router = VueRouter.createRouter({
-  history: VueRouter.createWebHistory(),
+  history: VueRouter.createWebHistory(publicPath),
   routes,
 });
 

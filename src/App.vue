@@ -8,7 +8,6 @@ watch(() => router, () => isProjectActive.value = router.currentRoute.value.path
 </script>
 <template>
   <div class="page-content">
-    {{ currentPath }}
     <PresentationCard class="page-item" />
     <div class="links">
       <router-link to="/about-me" class="link-item"> About Me</router-link>

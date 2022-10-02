@@ -1,5 +1,8 @@
+const publicPath =
+  process.env.NODE_ENV === "development" ? "/" : "/Igor-Lira/";
+module.exports.publicPath = publicPath;
 module.exports = {
-  publicPath: process.env.PRODUCTION ? "/Igor-Lira/" : "/",
+  publicPath,
   devServer: {
     allowedHosts: "all",
   },
