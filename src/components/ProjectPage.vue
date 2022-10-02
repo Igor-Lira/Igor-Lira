@@ -3,11 +3,11 @@
     <div class="title-1">
       <slot name="title" />
     </div>
-    <div class="title-2"> Project description </div>
+    <div class="title-2"> Description </div>
     <div class="description-description">
       <slot name="description" />
     </div>
-    <div class="title-2"> About this project </div>
+    <div class="title-2"> About </div>
     <div class="description-description">
       <slot name="about" />
     </div>
@@ -21,6 +21,15 @@
 .description-container {
   margin-left: 10%;
   width: 80%;
+}
+
+.description-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #444444;
 }
 
 .title-1 {
