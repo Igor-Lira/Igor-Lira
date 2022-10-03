@@ -1,9 +1,9 @@
 import * as VueRouter from "vue-router";
 import AboutMe from "./components/AboutMe.vue";
-import MarvelWorld from "./components/MarvelWorld.vue";
+import MarvelWorld from "./components/side-projects/MarvelWorld.vue";
 import ProjectList from "./components/ProjectList.vue";
-import PostYourIdeas from "./components/PostYourIdeas.vue";
-import FindYourDuo from "./components/FindYourDuo.vue";
+import PostYourIdeas from "./components/side-projects/PostYourIdeas.vue";
+import FindYourDuo from "./components/side-projects/FindYourDuo.vue";
 import { publicPath } from "../vue.config";
 
 const routes = [
