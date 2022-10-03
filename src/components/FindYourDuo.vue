@@ -4,37 +4,35 @@ import ProjectPage from './ProjectPage.vue'
     
 <template>
     <ProjectPage>
-        <template #title>Find Your Duo</template>
+        <template #title> FIND YOUR DUO </template>
         <template #description>
             <p>
-                Find your duo is a full-stack application that assists gamers in finding other people to play together
-                based
-                on their preferences, such as which game they play, when they usually are online, and if they use voice
-                chat.
-                The
-                user can also create an announcement and wait for others to connect. There is a mobile and a web
-                version.
+                A full-stack application helps gamers find other people to play together according to their preferences,
+                such as which game they play, when they usually are online, and if they use voice chat. The user can
+                also create an announcement and wait for others to connect.
             </p>
-
+            <p>
+                Both mobile and web versions have three main pages: a game list, an announcement list and a formulary to
+                create an announcement.
+            </p>
         </template>
         <template #about>
             <p>
-                This project was developed in the NLW course by Rockseat, which consists of creating a React/React
-                Native
-                client with NodeJs in backend.
+                Developed along with the NLW course by <a href="https://lp.rocketseat.com.br/nlw"> Rockseat</a> e-sport
+                edition.
             </p>
 
             <p>
-                On the server side, express is used to create a server and retrieve GET and POST requests for
-                <b> users </b> and <b> announcements</b> models. Prisma TypeScript ORM facilitates data
+                On the server side, <b>NodeJs</b> with <b>Express</b> is used to create a server and retrieve GET and
+                POST requests for
+                users and announcements models. <b>Prisma</b> TypeScript ORM facilitates data
                 modelling, migrations,
                 type-safety and auto-completion.
             </p>
 
             <p>
-                On the client side, react uses components such as the Game Card that repeats in a list. React
-                Native
-                with expo is used to create the mobile version. Tailwindcss is used to add styling to the website.
+                On the client side, <b>React</b> use components such as the Game Card and the Announcement Card.
+                <b>React Native</b> with <b>Expo</b> is used to create the mobile version. Tailwind CSS is used for styling the website.
             </p>
         </template>
         <template #video>

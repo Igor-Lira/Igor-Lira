@@ -1,6 +1,8 @@
 <script setup>
-import download_file from '../utils';
+function openCV() {
+  window.open('https://docs.google.com/viewer?url=https://igor-lira.github.io/Igor-Lira/CV_EN.pdf');
 
+}
 function openLinkedIn() {
   window.open('https://www.linkedin.com/in/igor-lira-passos-5b4aa5192/')
 }
@@ -16,7 +18,7 @@ function openGithub() {
       <div class="presentation-content-2">Igor</div>
       <div class="presentation-content-1">a Web Developer</div>
       <div class="buttons-container">
-        <button @click="download_file('./CV_EN.pdf')"> Resume </button>
+        <button @click="openCV"> Resume </button>
         <button @click="openGithub"> <img src="../../public/icon-github.svg" alt=""></button>
         <button @click="openLinkedIn"> <img src="../../public/icon-linkedin.svg" alt=""> </button>
       </div>

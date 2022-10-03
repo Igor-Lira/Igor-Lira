@@ -10,8 +10,8 @@ watch(() => router, () => isProjectActive.value = router.currentRoute.value.path
   <div class="page-content">
     <PresentationCard class="page-item" />
     <div class="links">
-      <router-link to="/about-me" class="link-item"> About Me</router-link>
-      <router-link to="/projects" class="link-item" :class="[isProjectActive ? 'router-link-active': '']"> Projects
+      <router-link to="/about-me" class="link-item"> ABOUT ME </router-link>
+      <router-link to="/projects" class="link-item" :class="[isProjectActive ? 'router-link-active': '']"> SIDE PROJECTS
       </router-link>
     </div>
     <router-view></router-view>
@@ -58,7 +58,7 @@ export default {
 .link-item {
   position: relative;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .router-link-active::before {
@@ -66,7 +66,7 @@ export default {
   position: absolute;
   left: 50%;
   bottom: 5px;
-  width: 80px;
+  width: 120px;
   height: 3px;
   transform: skew(-12deg) translateX(-50%);
   background: #958d8d;

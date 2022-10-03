@@ -11,17 +11,26 @@ function navigate(name) {
   <div class="project-list-container">
     <div class="project-card">
       <img src="../../public/post-your-ideas-banner.jpg" @click="navigate('post-your-ideas')" />
-      <div class="project-category"> FULL-STACK WEB </div>
+      <div class="project-info">
+        <div class="project-category"> FULL-STACK WEB </div>
+        <div class="project-date"> 2022 </div>
+      </div>
       <div class="project-title"> POST YOUR IDEAS </div>
     </div>
     <div class="project-card" @click="navigate('find-your-duo')">
       <img src="../../public/find-your-duo-banner.png" />
-      <div class="project-category"> FULL-END WEB </div>
+      <div class="project-info">
+        <div class="project-category"> FULL-STACK WEB / MOBILE </div>
+        <div class="project-date"> 2022 </div>
+      </div>
       <div class="project-title"> FIND YOUR YOU </div>
     </div>
     <div class="project-card" @click="navigate('marvel')">
       <img src="../../public/marvel-banner.jpg" />
-      <div class="project-category"> FRONT-END WEB </div>
+      <div class="project-info">
+        <div class="project-category"> FRONT-END WEB </div>
+        <div class="project-date"> 2021 </div>
+      </div>
       <div class="project-title"> MARVEL WORLD </div>
     </div>
   </div>
@@ -49,11 +58,13 @@ function navigate(name) {
 
 .project-card>img {
   height: 200px;
-  width: 100%;
+  width: 300px;
   border-radius: 31px 31px 0px 0px;
 }
 
-.project-category {
+.project-category,
+.project-date {
+  margin-right: 20px;
   margin-left: 14px;
   margin-top: 11px;
   font-family: 'Roboto';
@@ -67,11 +78,18 @@ function navigate(name) {
 .project-title {
   margin-left: 14px;
   margin-top: 11px;
+  margin-bottom: 10px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   color: #333333;
+}
+
+.project-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
