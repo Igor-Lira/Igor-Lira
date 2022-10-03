@@ -15,8 +15,8 @@ function openGithub() {
   <div class="presentation-card">
     <div class="presentation-content">
       <div class="presentation-content-1">Hello, I'm</div>
-      <div class="presentation-content-2">Igor</div>
-      <div class="presentation-content-1">a Web Developer</div>
+      <div class="presentation-content-2">Igor Lira</div>
+      <div class="presentation-content-1">Web Developer</div>
       <div class="buttons-container">
         <button @click="openCV"> Resume </button>
         <button @click="openGithub"> <img src="../../public/icon-github.svg" alt=""></button>
