@@ -47,7 +47,7 @@ function navigate(name) {
 }
 
 .project-card {
-  max-width: 300px;
+  max-width: 250px;
   margin-right: 30px;
   margin-top: 30px;
   background: #FFFFFF;
@@ -58,7 +58,7 @@ function navigate(name) {
 
 .project-card>img {
   height: 200px;
-  width: 300px;
+  width: 250px;
   border-radius: 31px 31px 0px 0px;
 }
 

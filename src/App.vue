@@ -5,13 +5,8 @@ import { useMeta } from 'vue-meta'
 
 useMeta({
   title: 'Igor Lira',
-  icon: '../public/favicon.ico',
+  description: `Igor Lira's Profile | Web Developer`,
   htmlAttrs: { lang: 'en', amp: true },
-  meta: [
-    { charset: 'utf-8' },
-    { name: 'description', content: `Igor Lira's profile.` },
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  ]
 })
 
 const router = useRouter();
