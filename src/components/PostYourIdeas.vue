@@ -4,32 +4,48 @@ import ProjectPage from './ProjectPage.vue'
     
 <template>
     <ProjectPage>
-        <template #title>Post Your Ideas</template>
+        <template #title>POST YOUR IDEAS</template>
         <template #description>
-            Post your ideas is a Single Page Application that allows people to create posts with an image on a social
-            network. The user may create an account to be able to create, edit and delete posts while they can see other
-            users' posts.
-            This repository contains the front-end application consisting of three main views: the login page, the
-            post's
-            timeline, and the formulary for creating and editing pots. On the other hand, the backend has CRUD for users
-            and
-            post routes and a NoSQL database connection.
+            <p>
+                Single Page Application similar to Twitter, users may create posts with images to share thoughts. The
+                user may log in to be able to create, edit and delete posts while they can see other users' posts.
+            </p>
+            <p>
+                The client-side consists of three main views: the login page, the post's timeline, and the formulary for
+                creating and editing posts.
+
+            </p>
+            <p>
+                The server handles CRUD requests for users and posts models with a NoSQL database.
+            </p>
         </template>
         <template #about>
-            I developed this project in a full-stack Udemy course. The technologies used for building the application
-            were
-            Angular in the front end and NodeJs in the backend, using MongoDB as a database to store user and post
-            information.
+            <p>
 
-            I learned some core web development concepts, such as the authentication of clients to check if they are
-            logged
-            in or not and authorization to check if a user has the right to edit or delete a post (that could not be
-            theirs). Moreover, pagination is an elegant way to avoid loading too many posts on a large dataset.
+            </p>
+            I developed this project along with a full-stack <a
+                href="https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/">Udemy course</a>.
 
-            Which concerns the technologies, Angular has the Injection Dependency approach for each service used in the
-            components, also a static typing that allows a more clean and secure coding process. Mongoose is an easy way
-            to
-            create database schemas for MongoDB and apply some queries for CRUD requisitions.
+            <p>
+                The technologies used for building the application were
+                <b> Angular </b> in the front end, and <b>NodeJs</b> in the backend, using <b>MongoDB</b> as a database
+                to
+                store user
+                and post
+                information.
+                Mongoose is an easy
+                way
+                to
+                create database schemas for MongoDB and apply some queries for CRUD requisitions.
+            </p>
+
+            <p>
+                I learned some core web development concepts, such as the <b>authentication</b> of clients to check if
+                they are
+                logged
+                in or not and <b>authorization</b> to check if a user has the permission to edit or delete a post.
+                Moreover, pagination is an elegant way to avoid loading too many posts on a large dataset.
+            </p>
         </template>
         <template #video>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Tfnzh2fxGw8"

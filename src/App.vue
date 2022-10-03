@@ -55,14 +55,6 @@ export default {
   color: #958d8d;
 }
 
-a,
-a:visited,
-a:hover,
-a:active {
-  color: inherit;
-  text-decoration: inherit;
-}
-
 .link-item {
   position: relative;
   margin-top: 20px;
@@ -79,5 +71,15 @@ a:active {
   transform: skew(-12deg) translateX(-50%);
   background: #958d8d;
   z-index: -1;
+}
+</style>
+
+<style scoped>
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
 }
 </style>

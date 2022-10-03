@@ -3,11 +3,11 @@
     <div class="title-1">
       <slot name="title" />
     </div>
-    <div class="title-2"> Description </div>
+    <div class="title-2"> DESCRIPTION </div>
     <div class="description-description">
       <slot name="description" />
     </div>
-    <div class="title-2"> About </div>
+    <div class="title-2"> ABOUT </div>
     <div class="description-description">
       <slot name="about" />
     </div>
@@ -33,6 +33,8 @@
 }
 
 .title-1 {
+  margin-top: 20px;
+  text-align: center;
   font-family: 'Itim';
   font-style: normal;
   font-weight: 400;
