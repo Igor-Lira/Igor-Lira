@@ -1,37 +1,43 @@
 <script setup>
-import { useRouter } from 'vue-router'
+import { useRouter } from "vue-router";
+import ProjectCard from "./ProjectCard.vue";
 const router = useRouter();
 function navigate(name) {
   router.push({
     name,
   });
 }
+const projects = [
+  {
+    title: "POST YOUR IDEAS",
+    category: "FULL-STACK WEB",
+    date: "2022",
+    imagePath: "./post-your-ideas-banner.jpg",
+  },
+  {
+    title: "FIND YOUR DUO",
+    category: "FULL-STACK WEB",
+    date: "2022",
+    imagePath: "./find-your-duo-banner.png",
+  },
+  {
+    title: "MARVEL WORLD",
+    category: "FRONT-END WEB",
+    date: "2021",
+    imagePath: "./marvel-banner.jpg",
+  },
+];
 </script>
 <template>
   <div class="project-list-container">
-    <div class="project-card">
-      <img src="../../public/post-your-ideas-banner.jpg" @click="navigate('post-your-ideas')" />
-      <div class="project-info">
-        <div class="project-category"> FULL-STACK WEB </div>
-        <div class="project-date"> 2022 </div>
-      </div>
-      <div class="project-title"> POST YOUR IDEAS </div>
-    </div>
-    <div class="project-card" @click="navigate('find-your-duo')">
-      <img src="../../public/find-your-duo-banner.png" />
-      <div class="project-info">
-        <div class="project-category"> FULL-STACK WEB / MOBILE </div>
-        <div class="project-date"> 2022 </div>
-      </div>
-      <div class="project-title"> FIND YOUR YOU </div>
-    </div>
-    <div class="project-card" @click="navigate('marvel')">
-      <img src="../../public/marvel-banner.jpg" />
-      <div class="project-info">
-        <div class="project-category"> FRONT-END WEB </div>
-        <div class="project-date"> 2021 </div>
-      </div>
-      <div class="project-title"> MARVEL WORLD </div>
+    <div v-for="project in projects" :key="project.title">
+      <project-card
+        :title="project.title"
+        :category="project.category"
+        :date="project.date"
+        :image-path="project.imagePath"
+        @navigate="navigate(project.name)"
+      />
     </div>
   </div>
 </template>
@@ -44,52 +50,5 @@ function navigate(name) {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.project-card {
-  max-width: 250px;
-  margin-right: 30px;
-  margin-top: 30px;
-  background: #FFFFFF;
-  border: 1px solid #C4C4C4;
-  box-shadow: 3px 4px 4px rgba(192, 188, 188, 0.25);
-  border-radius: 31px 31px 10px 10px;
-}
-
-.project-card>img {
-  height: 200px;
-  width: 250px;
-  border-radius: 31px 31px 0px 0px;
-}
-
-.project-category,
-.project-date {
-  margin-right: 20px;
-  margin-left: 14px;
-  margin-top: 11px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #828282;
-}
-
-.project-title {
-  margin-left: 14px;
-  margin-top: 11px;
-  margin-bottom: 10px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  color: #333333;
-}
-
-.project-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 </style>
