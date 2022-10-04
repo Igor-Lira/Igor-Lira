@@ -10,12 +10,16 @@ useMeta({
 });
 
 const router = useRouter();
-const isProjectActive = ref(false);
+const isSideProjectActive = ref(false);
+const isAcademicProjectActive = ref(false);
 watch(
   () => router,
-  () =>
-    (isProjectActive.value =
-      router.currentRoute.value.path.includes("projects")),
+  () => {
+    isSideProjectActive.value =
+      router.currentRoute.value.path.includes("side-projects");
+    isAcademicProjectActive.value =
+      router.currentRoute.value.path.includes("academic-projects");
+  },
   { deep: true }
 );
 </script>
@@ -28,13 +32,20 @@ watch(
   <div class="page-content">
     <PresentationCard class="page-item" />
     <div class="links">
-      <router-link to="/about-me" class="link-item"> ABOUT ME </router-link>
+      <router-link to="/about-me" class="link-item w-1"> ABOUT ME </router-link>
       <router-link
-        to="/projects"
+        to="/side-projects"
         class="link-item"
-        :class="[isProjectActive ? 'router-link-active' : '']"
+        :class="[isSideProjectActive ? 'router-link-active w-2' : '']"
       >
-        PROJECTS
+        SIDE PROJECTS
+      </router-link>
+      <router-link
+        to="/academic-projects"
+        class="link-item"
+        :class="[isAcademicProjectActive ? 'router-link-active w-3' : '']"
+      >
+        ACADEMIC
       </router-link>
     </div>
     <router-view></router-view>
@@ -73,7 +84,7 @@ export default {
   font-family: "Itim";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 40px;
   color: #958d8d;
 }
@@ -89,11 +100,20 @@ export default {
   position: absolute;
   left: 50%;
   bottom: 5px;
-  width: 120px;
   height: 3px;
   transform: skew(-12deg) translateX(-50%);
   background: #958d8d;
   z-index: -1;
+}
+
+.w-1.router-link-active::before {
+  width: 90px;
+}
+.w-2.router-link-active::before {
+  width: 120px;
+}
+.w-3.router-link-active::before {
+  width: 80px;
 }
 </style>
 

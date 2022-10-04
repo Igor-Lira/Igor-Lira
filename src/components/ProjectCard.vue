@@ -38,7 +38,6 @@ const emits = defineEmits(["navigate"]);
 
 .project-category,
 .project-date {
-  margin-right: 20px;
   margin-left: 14px;
   margin-top: 11px;
   font-family: "Roboto";
@@ -47,6 +46,9 @@ const emits = defineEmits(["navigate"]);
   font-size: 14px;
   line-height: 16px;
   color: #828282;
+}
+.project-date {
+  margin-right: 12px;
 }
 
 .project-title {

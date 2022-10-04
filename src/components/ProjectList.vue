@@ -1,4 +1,5 @@
 <script setup>
+import { defineProps } from "vue";
 import { useRouter } from "vue-router";
 import ProjectCard from "./ProjectCard.vue";
 const router = useRouter();
@@ -7,30 +8,13 @@ function navigate(name) {
     name,
   });
 }
-const projects = [
-  {
-    title: "POST YOUR IDEAS",
-    category: "FULL-STACK WEB",
-    date: "2022",
-    imagePath: "./post-your-ideas-banner.jpg",
-  },
-  {
-    title: "FIND YOUR DUO",
-    category: "FULL-STACK WEB",
-    date: "2022",
-    imagePath: "./find-your-duo-banner.png",
-  },
-  {
-    title: "MARVEL WORLD",
-    category: "FRONT-END WEB",
-    date: "2021",
-    imagePath: "./marvel-banner.jpg",
-  },
-];
+const props = defineProps({
+  projects: [],
+});
 </script>
 <template>
   <div class="project-list-container">
-    <div v-for="project in projects" :key="project.title">
+    <div v-for="project in props.projects" :key="project.title">
       <project-card
         :title="project.title"
         :category="project.category"

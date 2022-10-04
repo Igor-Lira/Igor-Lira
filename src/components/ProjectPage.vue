@@ -38,7 +38,7 @@
   font-family: 'Itim';
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 43px;
   color: #000000;
 }

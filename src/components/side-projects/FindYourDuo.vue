@@ -7,7 +7,7 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title> FIND YOUR DUO </template>
     <template #description>
       <p>
-        A full-stack application helps gamers find other people to play together
+        A full-stack application that helps gamers to find other people to play together
         according to their preferences, such as which game they play, when they
         usually are online, and if they use voice chat. The user can also create
         an announcement and wait for others to connect.
