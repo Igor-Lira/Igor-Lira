@@ -7,17 +7,17 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title>POST YOUR IDEAS</template>
     <template #description>
       <p>
-        Single Page Application similar to Twitter, where users can create posts with
-        images to share their thoughts. The user may log in to create, edit
-        and delete posts while they can see other users' posts.
+        This Single Page Application allows users to post texts with images to
+        share their thoughts. In order to create, edit and delete posts, the
+        user may log in. All posts are avaible to the network see.
       </p>
       <p>
         The client-side consists of three main views: the login page, the post's
         timeline, and the formulary for creating and editing posts.
       </p>
       <p>
-        The server handles CRUD requests for users and posts models using a NoSQL
-        database.
+        The server handles CRUD requests for users and posts by using a
+        NoSQL database.
       </p>
     </template>
     <template #about>
@@ -38,10 +38,10 @@ import ProjectPage from "../ProjectPage.vue";
 
       <p>
         I learned some core web development concepts, such as the
-        <b>authentication</b> of clients to check if they are logged in,
-        and <b>authorization</b> to check if a user has the permission to edit
-        or delete a post. Moreover, pagination is an elegant way to avoid
-        loading too many posts on a large dataset.
+        <b>authentication</b> of clients to check if they are logged in, and
+        <b>authorization</b> to check if a user has the permission to edit or
+        delete a post. Moreover, pagination is an elegant way to avoid loading
+        too many posts on a large dataset.
       </p>
     </template>
     <template #video>

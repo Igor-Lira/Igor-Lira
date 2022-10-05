@@ -74,17 +74,20 @@ export default {
   width: 100%;
   height: auto;
 }
-
+@media only screen and (max-width: 500px) {
+  .links {
+    font-size: 12px !important;
+  }
+}
 .links {
   display: flex;
   justify-content: center;
   width: 100%;
   text-align: center;
-
   font-family: "Itim";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 40px;
   color: #958d8d;
 }
@@ -99,7 +102,7 @@ export default {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  bottom: 10px;
   height: 3px;
   transform: skew(-12deg) translateX(-50%);
   background: #958d8d;
@@ -107,13 +110,13 @@ export default {
 }
 
 .w-1.router-link-active::before {
-  width: 90px;
+  width: 60px;
 }
 .w-2.router-link-active::before {
-  width: 120px;
+  width: 90px;
 }
 .w-3.router-link-active::before {
-  width: 80px;
+  width: 60px;
 }
 </style>
 

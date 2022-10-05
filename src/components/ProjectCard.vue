@@ -23,7 +23,7 @@ const emits = defineEmits(["navigate"]);
 .project-card {
   max-width: 250px;
   margin-right: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-shadow: 3px 4px 4px rgba(192, 188, 188, 0.25);
