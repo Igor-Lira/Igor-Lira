@@ -7,15 +7,23 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title> FIND YOUR DUO </template>
     <template #description>
       <p>
-        A full-stack application that helps gamers to find other people to play together
-        according to their preferences, such as which game they play, when they
-        usually are online, and if they use voice chat. The user can also create
-        an announcement and wait for others to connect.
+        A full-stack application that helps gamers to find other people to play
+        together according to their preferences, such as which game they play,
+        when they usually are online, and if they use voice chat. The user can
+        also create an announcement and wait for others to connect.
       </p>
       <p>
         Both mobile and web versions have three main pages: a game list, an
         announcement list and a formulary to create an announcement.
       </p>
+    </template>
+
+    <template #link="{ open }">
+      <img
+        @click="open('https://github.com/Igor-Lira/find-your-duo')"
+        alt="GitHub forks"
+        src="https://img.shields.io/github/forks/Igor-Lira/find-your-duo?label=find-your-duo&style=social"
+      />
     </template>
     <template #about>
       <p>
@@ -23,19 +31,20 @@ import ProjectPage from "../ProjectPage.vue";
         <a href="https://lp.rocketseat.com.br/nlw"> Rockseat</a> e-sport
         edition.
       </p>
-
       <p>
-        On the server side, <b>NodeJs</b> with <b>Express</b> is used to create
-        a server and retrieve GET and POST requests for users and announcements
-        models. <b>Prisma</b> TypeScript ORM facilitates data modelling,
-        migrations, type-safety and auto-completion.
+        On the server side, NodeJs with Express is used to create a server and
+        perform Create and Read commands for Game and Announcement models. I
+        used Prisma TypeScript ORM, since it facilitates data modelling,
+        migrations with safety typing and auto-completion. Not only that, but
+        Prisma has an interface that helps to interact with the current stored
+        data. I defined the schemas based on my needs: 1 game have
+        <i>n</i> announcements, and 1 announcement is related with 1 game.
       </p>
 
       <p>
-        On the client side, <b>React</b> use components such as the Game Card
-        and the Announcement Card. <b>React Native</b> with <b>Expo</b> is used
-        to create the mobile version. Tailwind CSS is used for styling the
-        website.
+        On the client side, I used React to build components such as the Game
+        Card and the Announcement Card, and React Native to create the mobile
+        version. Aditionally, Tailwind CSS was used for styling the website.
       </p>
     </template>
     <template #video>

@@ -1,13 +1,21 @@
+<script setup>
+function openLink(link) {
+  window.open(link);
+}
+</script>
 <template>
   <div class="description-container">
     <div class="title-1">
       <slot name="title" />
     </div>
-    <div class="title-2"> DESCRIPTION </div>
+    <div class="title-2">DESCRIPTION</div>
     <div class="description-description">
       <slot name="description" />
     </div>
-    <div class="title-2"> ABOUT </div>
+    <div class="link">
+      <slot name="link" :open="openLink" />
+    </div>
+    <div class="title-2">ABOUT</div>
     <div class="description-description">
       <slot name="about" />
     </div>
@@ -16,7 +24,7 @@
     </div>
   </div>
 </template>
-  
+
 <style scoped>
 .description-container {
   margin-left: 10%;
@@ -24,7 +32,7 @@
 }
 
 .description-description {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -35,7 +43,7 @@
 .title-1 {
   margin-top: 20px;
   text-align: center;
-  font-family: 'Itim';
+  font-family: "Itim";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -44,7 +52,7 @@
 }
 
 .title-2 {
-  font-family: 'Itim';
+  font-family: "Itim";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -58,5 +66,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  height: auto;
 }
 </style>

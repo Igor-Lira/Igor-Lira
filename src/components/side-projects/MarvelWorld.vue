@@ -9,9 +9,16 @@ import ProjectPage from "../ProjectPage.vue";
       <p>
         A website that provides users with information about Marvel characters,
         to discover their history and also which comics, stories and series they
-        appear. Digging further, the user can see some about the comics'
-        details, such as their synopsis, price and which superheroes appear.
+        appear in. Digging further, the user can discover more about the comics,
+        such as the synopsis, price and which other superheroes are included.
       </p>
+    </template>
+    <template #link="{ open }">
+      <img
+        @click="open('https://github.com/Igor-Lira/marvel-world')"
+        alt="GitHub forks"
+        src="https://img.shields.io/github/forks/Igor-Lira/marvel-world?label=marvel-world&style=social"
+      />
     </template>
     <template #about>
       <p>
@@ -27,10 +34,10 @@ import ProjectPage from "../ProjectPage.vue";
       <p>
         The content is fetched from the
         <a href="https://developer.marvel.com/"> Marvel public API</a>. I
-        learned how to make an integration of client application with an
-        external RestFul API. Also, I explore the documentation to find out the
-        routes that could be useful for my needs. Aditionally, I searched for
-        the filter queries to use with the requests. For instance, if the user
+        learned how to make an integration of a client application with an
+        external RestFul API. Also, I explored the documentation to find out
+        which routes would be useful for my needs. Aditionally, I searched for
+        filter queries that goes with the requests. For instance, if the user
         searches for a specific character, the request must be filtered with
         nameStartsWith.
       </p>
@@ -53,3 +60,14 @@ import ProjectPage from "../ProjectPage.vue";
     </template>
   </ProjectPage>
 </template>
+
+<style scoped>
+.github-repository {
+  height: 20px;
+}
+.github-repository > img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>

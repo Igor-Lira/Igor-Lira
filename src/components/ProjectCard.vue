@@ -27,13 +27,13 @@ const emits = defineEmits(["navigate"]);
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-shadow: 3px 4px 4px rgba(192, 188, 188, 0.25);
-  border-radius: 31px 31px 10px 10px;
+  border-radius: 8px;
 }
 
 .project-card > img {
   height: 200px;
   width: 250px;
-  border-radius: 31px 31px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .project-category,

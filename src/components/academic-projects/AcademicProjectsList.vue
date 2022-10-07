@@ -15,13 +15,13 @@ const projects = [
     date: "2022",
     imagePath: "./ai-banner.png",
   },
-  {
-    name: 'skyplot',
-    title: "SKYPLOT IN AN ANDROID APPLICATION",
-    category: "MOBILE DEVELOPMENT",
-    date: "2021",
-    imagePath: "./skyplot-banner.png",
-  },
+  // {
+  //   name: 'skyplot',
+  //   title: "SKYPLOT IN AN ANDROID APPLICATION",
+  //   category: "MOBILE DEVELOPMENT",
+  //   date: "2021",
+  //   imagePath: "./skyplot-banner.png",
+  // },
 ];
 </script>
 
