@@ -32,18 +32,18 @@ watch(
   <div class="page-content">
     <PresentationCard class="page-item" />
     <div class="links">
-      <router-link to="/about-me" class="link-item w-1"> ABOUT ME </router-link>
+      <router-link to="/about-me" class="link-item"> ABOUT ME </router-link>
       <router-link
         to="/side-projects"
         class="link-item"
-        :class="[isSideProjectActive ? 'router-link-active w-2' : '']"
+        :class="[isSideProjectActive ? 'router-link-active' : '']"
       >
         SIDE PROJECTS
       </router-link>
       <router-link
         to="/academic-projects"
         class="link-item"
-        :class="[isAcademicProjectActive ? 'router-link-active w-3' : '']"
+        :class="[isAcademicProjectActive ? 'router-link-active' : '']"
       >
         ACADEMIC
       </router-link>
@@ -100,23 +100,14 @@ export default {
 
 .router-link-active::before {
   content: "";
+  width: 100%;
   position: absolute;
   left: 50%;
-  bottom: 10px;
+  bottom: 5px;
   height: 3px;
   transform: skew(-12deg) translateX(-50%);
   background: #958d8d;
   z-index: -1;
-}
-
-.w-1.router-link-active::before {
-  width: 60px;
-}
-.w-2.router-link-active::before {
-  width: 90px;
-}
-.w-3.router-link-active::before {
-  width: 60px;
 }
 </style>
 

@@ -20,7 +20,7 @@ const projects = [
     title: "MARVEL WORLD",
     category: "FRONT-END WEB",
     date: "2021",
-    imagePath: "./marvel-banner.jpg",
+    imagePath: "./marvel-banner.png",
   },
 ];
 </script>
