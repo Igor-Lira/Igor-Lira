@@ -16,7 +16,8 @@ import ProjectPage from "../ProjectPage.vue";
         timeline, and the formulary for creating and editing posts.
       </p>
       <p>
-        The server handles CRUD requests for users and posts supported by a NoSQL database.
+        The server handles CRUD requests for users and posts supported by a
+        NoSQL database.
       </p>
     </template>
     <template #link="{ open }">
@@ -35,23 +36,23 @@ import ProjectPage from "../ProjectPage.vue";
       >.
 
       <p>
-        The server is set up with NodeJs, Express and MongoDB
-        to store users and post information. I created the database schemas
-        with Mongoose because it includes built-in type casting, validation and
-        query building. The server interacts with the database with CRUD
-        (Create, Read, Update and Delete) commands for User and Post models. I
-        learned more about some core concepts of web development:
-        Authentication, authorization, and pagination. Authentication to create
-        tokens to check if a user is logged in and is enabled to create posts.
-        Authorization to check if the logged-in user has permission to edit
-        or delete a post. Pagination avoids loading too many posts of a large
-        dataset by adding limit and offset in requests.
+        The server is set up with NodeJs, Express and MongoDB to store users and
+        post information. I created the database schemas with Mongoose because
+        it includes built-in type casting, validation and query building. The
+        server interacts with the database with CRUD (Create, Read, Update and
+        Delete) commands for User and Post models. I learned more about some
+        core concepts of web development: Authentication, authorization, and
+        pagination. Authentication to create tokens to check if a user is logged
+        in and is enabled to create posts. Authorization to check if the
+        logged-in user has permission to edit or delete a post. Pagination
+        avoids loading too many posts of a large dataset by adding limit and
+        offset in requests.
       </p>
       <p>
         On the client side, I created the core components and views with
-        Angular, and to increase productivity, I used the Angular
-        material design. Also, I implemented the logic to display the buttons
-        (Create, Edit, Delete) and Pages (Login, Log Out) according to the user
+        Angular, and to increase productivity, I used the Angular material
+        design. Also, I implemented the logic to display the buttons (Create,
+        Edit, Delete) and Pages (Login, Log Out) according to the user
         authorization and authentication.
       </p>
     </template>

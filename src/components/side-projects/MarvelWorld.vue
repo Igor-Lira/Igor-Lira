@@ -7,7 +7,7 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title> MARVEL UNIVERSE </template>
     <template #description>
       <p>
-        A website provides users with information about Marvel characters to
+        This website provides users with information about Marvel characters to
         discover their history and which comics, stories and series they appear
         in. Digging further, the user can find more about the comics, such as
         the synopsis, price and which other superheroes fight together.
