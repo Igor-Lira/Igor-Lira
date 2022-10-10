@@ -7,10 +7,10 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title> MARVEL UNIVERSE </template>
     <template #description>
       <p>
-        A website that provides users with information about Marvel characters,
-        to discover their history and also which comics, stories and series they
-        appear in. Digging further, the user can discover more about the comics,
-        such as the synopsis, price and which other superheroes are included.
+        A website provides users with information about Marvel characters to
+        discover their history and which comics, stories and series they appear
+        in. Digging further, the user can find more about the comics, such as
+        the synopsis, price and which other superheroes fight together.
       </p>
     </template>
     <template #link="{ open }">
@@ -24,10 +24,11 @@ import ProjectPage from "../ProjectPage.vue";
       <p>
         This project is a Single Page Application built with VueJs. The
         front-end routing enables the navigation between the views (List of
-        superheroes, Character Info, and Comic Info) wihout refreshing the page.
+        superheroes, Character Info, and Comic Info) without refreshing the
+        page.
       </p>
       <p>
-        I choose Vue3 because it is one of the powerful frameworks to use
+        I choose Vue3 because it is one of the most powerful frameworks to use
         components to create modern SPA. The most evident component is the card
         that will handle the hero's information (name, image and description).
       </p>
@@ -36,15 +37,15 @@ import ProjectPage from "../ProjectPage.vue";
         <a href="https://developer.marvel.com/"> Marvel public API</a>. I
         learned how to make an integration of a client application with an
         external RestFul API. Also, I explored the documentation to find out
-        which routes would be useful for my needs. Aditionally, I searched for
-        filter queries that goes with the requests. For instance, if the user
+        which routes would be helpful for my needs. Additionally, I searched for
+        filter queries that go with the requests. For instance, if the user
         searches for a specific character, the request must be filtered with
-        nameStartsWith.
+        "name starts with".
       </p>
       <p>
         One of my concerns was to create a responsive layout, so I navigated in
         a mobile layout to check if accessibility was good enough. I made good
-        use of flexboxs and media queries CSS tricks to reach this goal.
+        use of flexbox and media queries to reach this goal.
       </p>
     </template>
     <template #video>

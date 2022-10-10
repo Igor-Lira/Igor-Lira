@@ -10,11 +10,10 @@ import ProjectPage from "../ProjectPage.vue";
 
     <template #description>
       <p>
-        This project was done in a Institutional Scientific Initiation
-        Scholarship Program at Federal University of Ceará for 1 year. The
-        results were presented in CILAMCE 2021, an International Conference, and
-        also in the annual university meeting in Federal University of Ceara.
-        You can check below the abstract or the full article in the link.
+        A scientific scholarship program at the Federal University of Ceará with
+        a duration of 1 year. I presented the results at the international
+        conference Cilamce. You can check the abstract below or download the
+        article at the link.
       </p>
     </template>
 

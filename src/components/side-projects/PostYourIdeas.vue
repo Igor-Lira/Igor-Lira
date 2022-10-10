@@ -7,18 +7,16 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title>POST YOUR IDEAS</template>
     <template #description>
       <p>
-        A full-stack project that allows users to post texts with images to
-        share their thoughts (similar to Twitter). In order to create, edit and
-        delete posts, the user may log in. All posts are avaible to the
-        community see.
+        This full-stack project allows users to post texts with images to share
+        their thoughts (similar to Twitter). The user may log in to create, edit
+        and delete posts. All posts are available for the community to see.
       </p>
       <p>
         The client-side consists of three main views: the login page, the post's
         timeline, and the formulary for creating and editing posts.
       </p>
       <p>
-        The server handles CRUD requests for users and posts by using a NoSQL
-        database.
+        The server handles CRUD requests for users and posts supported by a NoSQL database.
       </p>
     </template>
     <template #link="{ open }">
@@ -37,23 +35,23 @@ import ProjectPage from "../ProjectPage.vue";
       >.
 
       <p>
-        The server is setup with NodeJs, Express and MongoDB as a NoSQL database
-        to store users and posts information. I created the database schemas
-        with Mongoose, because it includes built-in type casting, validation and
+        The server is set up with NodeJs, Express and MongoDB
+        to store users and post information. I created the database schemas
+        with Mongoose because it includes built-in type casting, validation and
         query building. The server interacts with the database with CRUD
         (Create, Read, Update and Delete) commands for User and Post models. I
         learned more about some core concepts of web development:
-        authentication, authorization, and pagination. Authentication to create
-        tokens to check if user is logged in and is enabled to create posts.
-        Authorization to check if the logged in user has the permissions to edit
-        or delete a post. Pagination to avoid loading too many posts of a large
+        Authentication, authorization, and pagination. Authentication to create
+        tokens to check if a user is logged in and is enabled to create posts.
+        Authorization to check if the logged-in user has permission to edit
+        or delete a post. Pagination avoids loading too many posts of a large
         dataset by adding limit and offset in requests.
       </p>
       <p>
-        On the client-side, I created the core components and views with
-        Angular, and in order to increase the productivity, I used the Angular
+        On the client side, I created the core components and views with
+        Angular, and to increase productivity, I used the Angular
         material design. Also, I implemented the logic to display the buttons
-        (Create, Edit, Delete) and Pages (Log In, Log Out) according to the user
+        (Create, Edit, Delete) and Pages (Login, Log Out) according to the user
         authorization and authentication.
       </p>
     </template>

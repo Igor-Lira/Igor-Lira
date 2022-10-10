@@ -9,14 +9,12 @@ import ProjectPage from "../ProjectPage.vue";
     </template>
     <template #description>
       <p>
-        This is the final project of my graduation at University Federal of
-        Ceará. I developed this subject for over 6 months and wrote a full
-        report of my analysis. I was evaluated with grade A+ and got my
-        certification of engineer after presenting this work.
-      </p>
-      <p>
-        you can read the abstract below, or check the complete report in the
-        link (portuguese version only).
+        This is my final project at the University Federal of Ceará. I used
+        machine learning algorithms in an actual application of civil
+        engineering. I wrote a complete report with my analysis, results and
+        conclusions that you can find at the link (Portuguese version
+        only) or read the abstract below. I presented this work to validate my
+        engineering formation and got a perfect grade.
       </p>
       <p>
         Keys: Python. Sklearn. GoogleColab. Data Analysis. Exploratory Analysis.

@@ -7,7 +7,7 @@ import ProjectPage from "../ProjectPage.vue";
     <template #title> FIND YOUR DUO </template>
     <template #description>
       <p>
-        A full-stack application that helps gamers to find other people to play
+        This full-stack application helps gamers to find other people to play
         together according to their preferences, such as which game they play,
         when they usually are online, and if they use voice chat. The user can
         also create an announcement and wait for others to connect.
@@ -34,11 +34,11 @@ import ProjectPage from "../ProjectPage.vue";
       <p>
         On the server side, NodeJs with Express is used to create a server and
         perform Create and Read commands for Game and Announcement models. I
-        used Prisma TypeScript ORM, since it facilitates data modelling,
-        migrations with safety typing and auto-completion. Not only that, but
-        Prisma has an interface that helps to interact with the current stored
-        data. I defined the schemas based on my needs: 1 game have
-        <i>n</i> announcements, and 1 announcement is related with 1 game.
+        used Prisma TypeScript ORM since it facilitates data modelling
+        and migrations with safety typing and auto-completion. Not only that, but
+        Prisma has an interface that helps to interact with the currently stored
+        data. I defined the schemas based on my needs: 1 game has
+        n announcements, and 1 announcement is related to 1 game.
       </p>
 
       <p>
